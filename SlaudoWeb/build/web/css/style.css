@@ -1,0 +1,70 @@
+:root{
+    --primario: #8deaf5;
+    --secundario: #2fbdf5;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, * :after{
+    box-sizing: inherit;
+}
+
+h1{
+    text-align: center;
+}
+
+body{
+    background-color: var(--primario);
+    padding: 1rem;
+}
+
+.ajuste{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 15%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-69%,-300%);
+}
+
+.formulario{
+    padding: 2rem;
+    color: var(--blanco);
+    border-radius: 10px;
+}
+
+.campo{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.campo input[type = "text"]{
+    border-radius: 20px;
+    color: var(--secundario);
+    text-align: center;
+    width: 350px;
+    height: 40px;
+}
+
+.campo label{
+    font-size: 2rem;
+}
+
+.boton{
+    text-align: center;
+}
+
+.tamBoton{
+    font-size: 1.2rem;
+    color: var(--blanco);
+    background-color: var(--secundario);
+    border-radius: 20px;
+    width: 130px;
+    height: 40px;
+}
